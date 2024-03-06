@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #00b98e;
+    --primary-dark-color: #02ab83;
+    --primary-light-colors: #02ab83;
+    --accent-color: #0e2e50;
+
+    --white: #EFFDF5;
+    --neutral: #666565;
+
+    font-size: 18px;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+
+body {
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+.category-card {
+    border-radius: 12px;
+    padding: 12px;
+    background-color: var(--white);
+}
+
+.category-card .category-body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: dashed 1px var(--primary-color);
+    border-radius: 12px;
+
+    background-color: white;
+    color: var(--bs-body-color);
+    transition: background-color 400ms ease-in, color 400ms ease-in;
+}
+
+.category-card .category-description {
+    color: var(--primary-color);
+    transition: color 400ms ease-in;
+}
+
+.rounded-icon-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 24px;
+    border: dashed 1px var(--primary-color);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+
+    background-color: white;
+}
+
+.rounded-icon-container i {
+    color: var(--primary-color);
+}
+
+.category-card:hover .category-body {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.category-card:hover .category-description {
+    color: white;
+}
+
+.category-card:hover .category-body .rounded-icon-container {
+    background-color: white;
+}
+.footerBorder{
+    border: solid 0.1rem  var(--primary-color) ;
+}
